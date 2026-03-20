@@ -28,6 +28,6 @@
 
 - name: unzip the file
   ansible.builtin.unarchive:
-    src: /tmp/catalogue.zip
+    src: /tmp/{{ component }}.zip
     dest: /app 
     remote_src: yes
