@@ -13,5 +13,5 @@ compose:
   ansible_host: private_ip_address
 
 keyed_groups:
-- prefix: ""
+- seperator: ''
   key: tags.Component
