@@ -8,9 +8,9 @@ filters:
   tag:Name: frontend-dev
 compose:
   # This sets the ansible_host variable to connect with the private IP address without changing the hostname.
-  ansible_user=ec2-user
-  ansible_password=DevOps321
   ansible_host: private_ip_address
+  ansible_user: ec2-user
+  ansible_password: DevOps321
 keyed_groups:
 - separator: ''
   key: tags.Component
