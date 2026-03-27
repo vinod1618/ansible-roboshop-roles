@@ -1,16 +1,18 @@
 plugin: amazon.aws.aws_ec2
 regions:
-- us-east-1
+  - us-east-1
 hostnames:
-- private-ip-address
+  - private-ip-address
+
 filters:
-  instance-state-name : running
   tag:Name: frontend-dev
+  instance-state-name: running
+
 compose:
-  # This sets the ansible_host variable to connect with the private IP address without changing the hostname.
   ansible_host: private_ip_address
   ansible_user: ec2-user
   ansible_password: DevOps321
+
 keyed_groups:
-- separator: ''
-  key: tags.Component
+  - separator: ''
+    key: tags.Component
