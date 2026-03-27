@@ -14,4 +14,4 @@ compose:
 
 keyed_groups:
 - prefix: ""
-  key: tags.Name
+  key: tags.Component
