@@ -5,4 +5,4 @@ hostnames:
 - private-ip-address
 filters:
 - tag:Name: frontend-dev
-  instance-state-name : running
+- instance-state-name : running
