@@ -1,2 +1,1 @@
-vars:
-  MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/dev/mysq_root_password', region='us-east-1', decrypt=True ) }}"
+MY_SQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/dev/mysq_root_password', region='us-east-1', decrypt=True ) }}"
